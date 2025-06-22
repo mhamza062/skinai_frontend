@@ -46,7 +46,7 @@ function App() {
     <div className="container">
     
       <h1>💆‍♀️ SkinAI – Skincare Advisor</h1>
-      <p>Apni skin details den aur Ya AI System  Roman Urdu mein advice dega!</p>
+      <p>Ap apni skin details den aur Ya AI System  Roman Urdu mein advice dega!</p>
 
       <Form onResult={handleResult} disabled={loading} />
       {loading && <div className="loader"></div>}
