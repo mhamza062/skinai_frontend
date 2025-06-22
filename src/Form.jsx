@@ -15,6 +15,20 @@ const Form = ({ onResult, disabled }) => {
     budget_range: "",
     sleep_hours: "",
   });
+  const formLabels = {
+    skin_type: "Apki skin kis type ki hai?",
+    issue: "Apki skin ka masla kis qism ka hai?",
+    duration: "Apko kitni der se ya masla hai?",
+    age_group: "Apka age group kya hai?",
+    sensitivity: "Apki skin kitni sensitive hai?",
+    current_routine: "Apki current skincare routine kya hai?",
+    water_intake: "Ap rozana kitna pani peetay hain?",
+    sun_exposure: "Ap rozana kitna dhoop mein rehtay hain?",
+    allergies: "Kya apko kisi chez se allergy hai?",
+    skincare_goal: "Apka skincare goal kya hai?",
+    budget_range: "Apka budget range kya hai?",
+    sleep_hours: "Rozana kitni der ki neend lete hain?"
+  };
 
   const getOptions = (key) => {
     switch (key) {
@@ -66,7 +80,7 @@ const Form = ({ onResult, disabled }) => {
     <form onSubmit={handleSubmit}>
       {Object.keys(formData).map((key) => (
         <div key={key} style={{ marginBottom: "12px" }}>
-          <label style={{ fontWeight: "bold" }}>{key.replace(/_/g, " ")}:</label><br />
+          <label style={{ fontWeight: "bold" }}>{formLabels[key] || key.replace(/_/g, " ")}:</label>
 
           {dropdownFields.includes(key) ? (
             <select
