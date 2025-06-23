@@ -1,17 +1,96 @@
-## Running React on Replit
+# 💆‍♀️ SkinAI – Personalized Skincare Advisor
 
-[React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.
+**SkinAI** is an intelligent skincare recommendation platform built for Pakistani and Asian audiences. Users get **personalized skincare routines** in **Roman Urdu**, powered by **Gemini AI**, with **budget-friendly, local product suggestions**.
 
-[Vite](https://vitejs.dev/) is a blazing fast frontend build tool that includes features like Hot Module Reloading (HMR), optimized builds, and TypeScript support out of the box.
+---
 
-Using the two in conjunction is one of the fastest ways to build a web app.
+## 🖼️ Live Demo
 
-### Getting Started
-- Hit run
-- Edit [App.jsx](#src/App.jsx) and watch it live update!
+🌐 **Frontend (Vercel):** [Click to Visit]([(https://skinai-frontend.vercel.app/])  
 
-By default, Replit runs the `dev` script, but you can configure it by changing the `run` field in the [configuration file](#.replit). Here are the vite docs for [serving production websites](https://vitejs.dev/guide/build.html)
+> 🔁 Backend runs on Replit and can be pinged using services like [cron-job.org](https://cron-job.org) to stay alive.
 
-### Typescript
+---
 
-Just rename any file from `.jsx` to `.tsx`. You can also try our [TypeScript Template](https://replit.com/@replit/React-TypeScript)
+## 🧪 Tech Stack
+
+| Layer       | Technology         |
+|-------------|--------------------|
+| Frontend    | React (Vite)       |
+| Backend     | FastAPI            |
+| AI Model    | Gemini 1.5 Flash   |
+| Styling     | Pure CSS (Futuristic UI) |
+| Deployment  | Vercel (frontend), Replit (backend) |
+
+---
+
+## 📸 Screenshots
+
+> _(Add your own screenshots or hosted images here using markdown)_
+
+
+
+yaml
+Copy
+Edit
+
+---
+
+## 🧠 Features
+
+- 📝 Dynamic form to collect skincare details (like skin type, age group, sensitivity, etc.)
+- 💬 Gemini API response in **Roman Urdu** with clear skincare advice
+- 🧴 Uses **local Pakistani/Asian brands** in suggestions
+- 💰 Recommends **budget-friendly skincare routines**
+- ⚠️ Adds medical disclaimers and gentle guidance
+- ⏳ Loading states (e.g. “Gemini soch raha hai...”) for better UX
+
+---
+
+## 🔮 Future Roadmap
+
+Planned features for v2+:
+
+- 📷 **Image-based skin analysis** (upload a selfie to detect acne, dryness, etc.)
+- 🔍 **Custom RAG (Retrieval-Augmented Generation)** from dermatology knowledge base
+- 📥 **Download skincare recommendation as PDF**
+- 👥 User authentication (track progress, save preferences)
+- 🌐 Language toggle (Roman Urdu ↔ English ↔ Urdu script)
+- 📱 Mobile responsive PWA / App version
+- 💬 Chat-style skin consultation using Gemini
+
+---
+
+## 🔧 How to Run Locally
+
+### 1. Clone this Repository
+```bash
+git clone https://github.com/your-username/skinai.git
+cd skinai
+2. Start Backend (FastAPI)
+Make sure your .env contains your Gemini API key
+
+bash
+Copy
+Edit
+cd backend/
+uvicorn main:app --reload
+3. Start Frontend (React + Vite)
+bash
+Copy
+Edit
+cd frontend/
+npm install
+npm run dev
+🛡️ License
+This project is open-source and MIT licensed. Use freely, just give credit if reused.
+
+🙌 Credits
+👤 Developed by: Hamza Zubair
+
+💡 AI Model: Gemini 1.5 Flash by Google
+
+🇵🇰 Inspired by Pakistani skincare needs & accessibility
+
+📫 Contact / Suggestions?
+Have ideas, suggestions, or want to collaborate? Reach out via Issues or email: youremail@example.com
