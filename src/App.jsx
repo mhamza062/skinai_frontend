@@ -55,7 +55,7 @@ function App() {
 
         {!loading && result && (
           <div className="result-box">
-            <h3>🔍 Hamray Ai ka Mashwara:</h3>
+            <h3>🔍 Hamray AI ka Mashwara:</h3>
             <ReactMarkdown>{result}</ReactMarkdown>
           </div>
         )}
